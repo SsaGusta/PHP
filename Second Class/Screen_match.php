@@ -6,6 +6,10 @@ $nomeFilme = "Top Gun - Maverick";
 $anoLancamento = 2022;
 $qtndDeNotas = $argc - 1;
 $somaDeNotas = 0;
+for ($contador = 1; $contador < $argc; $contador++){
+    $somaDeNotas += $argv[$contador];
+}
+
 $notaFilme = $somaDeNotas / $qtndDeNotas;
 $incluidoNoPlano = true;
 
