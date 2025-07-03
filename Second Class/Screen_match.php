@@ -11,6 +11,8 @@ for ($contador = 1; $contador < $argc; $contador++){
 }
 
 
+
+
 $notaFilme = $somaDeNotas / $qtndDeNotas;
 $incluidoNoPlano = true;
 

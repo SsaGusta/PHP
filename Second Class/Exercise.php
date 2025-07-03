@@ -1,11 +1,8 @@
 <?php
-$contador = 0;
-$numTotal = 100;
-$numImpar = 1;
 
-for($contador = 0; $contador < $numTotal; $contador++){
-    $numImpar += 2;
-    if($numImpar >= $numTotal){
+for($contador = 0; $contador < 100; $contador++){
+    $numImpar = (2*$contador)+1;
+    if($numImpar >= 100){
         break;
     }
     echo "$numImpar\n";
