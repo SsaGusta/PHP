@@ -1,0 +1,8 @@
+$anoLancamento = $argv[1] ?? 2022;
+// Para solicitar valores do terminal usa argv[1](para pegar somente o primeiro indice)
+
+// ?? siginifa que se o operador da esquerda for nulo(não for inserido pelo usuário),
+// retornará a resposta que esta a direita
+
+--------------------------------
+

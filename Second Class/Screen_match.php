@@ -3,14 +3,10 @@
 echo "Bem Vindo(a) ao Screen Match!\n";
 
 $nomeFilme = "Top Gun - Maverick";
-$nomeFilme = "Thor: Ragnark";
-$nomeFilme = "Se beber não case";
-$anoLancamento = $argv[1] ?? 2022;
-// Para solicitar valores do terminal usa argv[1](para pegar somente o primeiro indice)
-
-// ?? siginifa que se o operador da esquerda for nulo(noa for inserido pelo usuário),
-// retornará a resposta que esta a direita
-$notaFilme = 8.8;
+$anoLancamento = 2022;
+$qtndDeNotas = $argc - 1;
+$somaDeNotas = 0;
+$notaFilme = $somaDeNotas / $qtndDeNotas;
 $incluidoNoPlano = true;
 
 echo "Nome do filme: $nomeFilme\n";
@@ -36,4 +32,6 @@ $genero = match ($nomeFilme) {
     default => "Genero Desconhecido"
 };
 
-echo "O genero do filme é: $genero";
+echo "O genero do filme é: $genero\n";
+
+echo $argc;
