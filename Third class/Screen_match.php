@@ -5,12 +5,14 @@ echo "Bem Vindo(a) ao Screen Match!\n";
 $nomeFilme = "Top Gun - Maverick";
 $anoLancamento = 2022;
 $qtndDeNotas = $argc - 1;
-$somaDeNotas = 0;
+$notas = [];
 for ($contador = 1; $contador < $argc; $contador++){
-    $somaDeNotas += $argv[$contador];
+    $notas[] = (float) $argv[$contador];
 }
-
-
+$somaDeNotas = 0;
+for($i = 0; $i < count($notas); $i++){
+    $somaDeNotas += $notas[$i];
+}
 
 
 $notaFilme = $somaDeNotas / $qtndDeNotas;
@@ -41,4 +43,11 @@ $genero = match ($nomeFilme) {
 
 echo "O genero do filme é: $genero\n";
 
-echo $argc;
+$filme = [
+    "nome" => "Thor: Ragnarok",
+    "ano" => 2021,
+    "nota" =>7.8,
+    "genero" => "super-heroi",
+];
+
+echo $filme["ano"];
