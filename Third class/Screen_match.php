@@ -1,5 +1,18 @@
 <?php
 
+function exibeMensagemLancamento($ano) {
+    if ($ano > 2022){
+    echo "Esse filme é um lançamento\n";
+} elseif($ano > 2020 && $ano <= 2022){
+    echo "Esse filme ainda é novo\n";
+}
+else{
+    echo "Esse filme não é um lançamento";
+}
+}
+
+
+
 echo "Bem Vindo(a) ao Screen Match!\n";
 
 $nomeFilme = "Top Gun - Maverick";
@@ -21,14 +34,7 @@ echo "Nome do filme: $nomeFilme\n";
 echo "Nota do filme: $notaFilme\n";
 echo "Ano do filme: $anoLancamento\n";
 
-if ($anoLancamento > 2022){
-    echo "Esse filme é um lançamento\n";
-} elseif($anoLancamento > 2020 && $anoLancamento <= 2022){
-    echo "Esse filme ainda é novo\n";
-}
-else{
-    echo "Esse filme não é um lançamento";
-}
+exibeMensagemLancamento($anoLancamento);
 
 $genero = match ($nomeFilme) {
     // match serve para comparar algo atribuindo caso encontre, uma equivalencia
