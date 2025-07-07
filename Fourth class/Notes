@@ -1,0 +1,7 @@
+$numero = fgets(STDIN); - comando para solicitar entrada de usuario
+ex:
+
+echo "Digite um numero: \n";
+$numero = (int) fgets(STDIN);
+system ('cls'); - limpa o terminal
+echo "O numero é: $numero\n";
