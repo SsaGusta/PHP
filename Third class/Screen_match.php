@@ -11,6 +11,9 @@ else{
 }
 }
 
+function incluidoNoPlano($planoPrime, $anoLancamento){
+    return $planoPrime || $anoLancamento < 2020;
+}
 
 
 echo "Bem Vindo(a) ao Screen Match!\n";
@@ -22,13 +25,12 @@ $notas = [];
 for ($contador = 1; $contador < $argc; $contador++){
     $notas[] = (float) $argv[$contador];
 }
-foreach($notas as $nota){
-    $somaDeNotas += $nota;
-}
-
 
 $notaFilme = array_sum($notas) / $qtndDeNotas;
-$incluidoNoPlano = true;
+$planoPrime = true;
+
+$incluidoNoPlano = incluidoNoPlano($planoPrime, $anoLancamento);
+
 
 echo "Nome do filme: $nomeFilme\n";
 echo "Nota do filme: $notaFilme\n";
