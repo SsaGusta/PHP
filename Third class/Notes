@@ -2,3 +2,7 @@ $somaDeNotas = 0;
 for($i = 0; $i < count($notas); $i++){
     $somaDeNotas += $notas[$i];
 }
+
+array_unique -> remove itens duplicados no array
+ex: $numeros = array_unique([1, 2, 2, 3, 4, 4, 5]);
+    var_dump($numeros);
