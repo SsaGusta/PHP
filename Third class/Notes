@@ -6,3 +6,15 @@ for($i = 0; $i < count($notas); $i++){
 array_unique -> remove itens duplicados no array
 ex: $numeros = array_unique([1, 2, 2, 3, 4, 4, 5]);
     var_dump($numeros);
+
+
+funções reservadas:
+
+sort(nome_do_array) - organiza um array de numeros do menor para o maior
+min(nome_do_array) - imprime o menor valor de um array. pode ser usada em:
+    $menorNota = min(nome_do_array);
+    echo $menorNota;
+
+    ou
+
+    echo min(nome_do_array);
