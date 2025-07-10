@@ -46,4 +46,7 @@ $filme = [
 echo $filme["ano"];
 echo "\n";
 echo json_encode($filme);
-var_dump(json_decode('{"nome":"Thor: Ragnarok","ano":2021,"nota":7.8,"genero":"super-heroi"}'));
+var_dump(json_decode('{"nome":"Thor: Ragnarok","ano":2021,"nota":7.8,"genero":"super-heroi"}',true));
+
+$filmeComoStringJSON = json_encode($filme);
+file_put_contents(__DIR__ . '/filme.json', $filmeComoStringJSON);
