@@ -1,8 +1,8 @@
 <?php
 
-Filme {
-    $nome;
-    $anoLancamento;
-    $genero;
-    $nota;
+class Filme {
+    public $nome;
+    public $anoLancamento;
+    public $genero;
+    public $nota;
 }
