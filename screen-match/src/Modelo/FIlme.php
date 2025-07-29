@@ -1,8 +1,8 @@
 <?php
 
 class Filme {
-    public $nome;
-    public $anoLancamento;
-    public $genero;
-    public $nota;
+    public string $nome;
+    public int $anoLancamento;
+    public string $genero;
+    public float $nota;
 }
